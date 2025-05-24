@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sindi Pepa</title>
+    <link rel="stylesheet" href="homePage.css" type="text/css">
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">//to include emailjs</script> 
+    <script type="text/javascript">
+      //the function to send email by emailjs
+      (function() {
+        emailjs.init("NYvq0yHAn9E_z4BK6");
+      } )();
+    </script>
+
+  </head>
+  <body>
+
+    <header id="header">
+
+        <img id="photo" src="pics/background.jpg" width="100%">
+
+    <div id="left_header">
+      <h4>Sindi Pepa</h4>
+      <p>Front-End</p>
+      <h6>You can find me in:</h6>
+      <ul id="contact-info">
+        <li><a href="https://www.instagram.com/sindii_pepa/">Instagram</a></li>
+        <li><a href="https://www.facebook.com">Facebook</a></li>
+        <li><a href="https://www.linkedin.com/in/sindi-pepa-aaaaa22b4/">LinkedIn</a></li>
+        <li><a href="https://github.com/sindipepa1">Github</a></li>
+      </ul>
+    </div>
+
+    <div id="line"></div>
+
+    <div id="right_header">
+      <h5>Email</h5>
+      <a href="mailto:sindipepa0@gmail.com">sindipepa0@gmail.com</a>
+      <h5>Location</h5>
+      <p style="font-size: 1vw; ">Tirane,Albania</p>
+      <h5>CV</h5>
+      <a   download href="CV Sindi Pepa.pdf" 
+      >Download
+      <img id="download" src="pics/download.png" 
+      ></a>
+    </div>
+  </header>
+
+  <nav>
+    <ul id="menu">
+      <li><a href="#about_me">About me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+      <div id="about_me">
+        <h2>About me</h2>
+        <p>
+          I am a passionate Front-End Developer and Web Developer with a strong foundation in creating responsive, user-friendly, and visually appealing websites. My commitment to excellence drives me to deliver high-quality web solutions tailored to meet users' needs and business goals. I am proficient in modern front-end technologies, and I continuously enhance my skills to stay updated with the latest trends in web development.
+        </p>
+        <p>
+          With a focus on collaboration, problem-solving, and attention to detail, I strive to ensure seamless user experiences and optimal performance. I take pride in my ability to manage projects efficiently, meet deadlines, and adapt to evolving requirements, all while maintaining a high standard of work ethic and professionalism.
+        </p>
+        <p>  
+          With a Bachelor's degree in Computer Science and a strong GPA, I am committed to continuous learning and professional growth.I am seeking opportunities to leverage my skills and contribute to the success of projects in front-end and web development.
+        </p>
+      </div>
+    
+      <div id="education">
+        <h2>Education:</h2>
+        <h4>Bachelor's Degree in Computer Science</h4>
+        <h4>University/City/Country:</h4> 
+        <p>Beder Universit/Tirane/Albania</p> 
+        <h4>Expected Graduation:</h4>
+        <p>2026</p> 
+        <h4>Relevant coursework:</h4>
+        <p>Web programming, C++, C#, Data Base</p> 
+        <h4>GPA:</h4>
+        <p>3.95</p>
+        <h4>Projects:</h4>
+        <p>Magnificent Albania: Designed and developed a responsive webpage showcasing the most stunning beaches in Albania. The project highlights key destinations, descriptions, and breathtaking images using HTML and CSS.</p>
+      </div>
+
+      <div id="projects">
+        <h2>Projects:</h2>
+        <div id="pic1">
+          <img src="/pics/project1.jpg" >
+          <ul id="live_doc">
+            <li><a href="/projects/PROJEKT">Live website</a></li>
+            <li><a href="doc_p1.html">Documentation</a></li>
+          </ul>
+        </div>
+        
+      </div>
+
+      <div id="blog">
+        <h2>The Blog</h2>
+          <h4>The Rise of Edge Computing: Transforming the Way We Process Data</h4>
+        <p>
+          In the ever-evolving landscape of technology, edge computing is becoming a game-changer. With the proliferation of smart devices and the Internet of Things (IoT), businesses and individuals are seeking faster, more efficient ways to process data. This is where edge computing comes in.
+        </p>
+        <p>
+          <b>What is Edge Computing?</b><br>
+          Edge computing is a distributed IT architecture where data processing occurs closer to the data source rather than relying on centralized cloud servers. By processing data at or near its origin, edge computing reduces latency, enhances speed, and improves overall system efficiency.
+        </p>
+        <p>
+          <b>Why is Edge Computing Important?</b><br>
+          <b>Reduced Latency:</b> Traditional cloud computing involves sending data to remote servers, which can cause delays. Edge computing minimizes this by analyzing data locally.
+          <br><b>Enhanced Security:</b>With data processed closer to its source, there’s less exposure to potential breaches during transmission.
+          <br><b>Cost-Effective: </b>By reducing the need for constant data transfer to the cloud, edge computing can cut bandwidth costs.
+          <br><b>Scalability:</b>Businesses can expand their operations without overwhelming centralized servers.
+        </p>
+        <img src="/pics/blog1.jpg" width="40%" height="40%">
+        <img src="/pics/blog2.jpg" width="40%" height="40%">
+      </div>
+
+      <div id="contact">
+        <h4>Open for oportunities: Yes</h4>
+        <h2>Contact Form</h2>
+        <form onsubmit="SendEmail(); reset(); return false;">
+          <input id="name" type="text" name="text" placeholder="Full name" required><br><br>
+          <input id="email" type="email" name="email" placeholder="Email address" required><br><br>
+          <textarea id="message" placeholder="Your message" rows="4" required></textarea>
+          <button type="submit">Send message!</button>
+        </form>
+      </div>
+  </main>
+
+  <script>
+    function SendEmail(){
+      var params= {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+      }
+      emailjs.send("service_d4k4ubm", "template_ywo272q", params).then(function(res){
+        alert("Success!" +res.status);
+      })
+    }
+  </script>
+
+</body>
+</html>

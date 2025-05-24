@@ -1,0 +1,159 @@
+body{  
+    background-image: url(b5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.f1 {
+    background-color: red;
+    margin-right: 815px;
+    margin-left: -8px;
+    margin-top: -8px;
+    height: 65px;
+   width: 10.6%;
+  
+}
+.div4{
+    display: flex;
+}
+.div4 a{
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+    padding-top: 20px;
+    padding-left: 27px;
+}
+.div4 a:hover{
+    opacity: 1;
+    text-decoration: underline;
+    
+}
+header {
+    background-color: white;
+    margin-left: 150px;
+    margin-top: -65px;
+    padding: 0;
+    width: 90.65%;
+      }
+.div3 {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.div3  a{
+    color: darkgreen;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.div3  a:hover{
+    opacity: 1;
+    text-decoration: underline;
+    text-decoration-color: darkgreen;
+}
+.f2{
+    margin-right: 815px;
+    margin-left: -8px;
+    margin-top: 50px;
+    height: 65px;
+    width: 0;
+}
+.div5{ 
+    margin: 0;
+    width: 70px;
+    height: 50px;
+    background: darkgray;
+    transition: 0.5s;
+    padding: 10px;
+}
+.div5:hover{ 
+    width: 90px;
+    background-color: black;
+}
+.div5 img{
+    padding-top: 5px;
+    padding-left: 10px;
+    width: 40px;
+    height: 40px;
+}
+.div5 img:hover{
+    padding-top:2px;
+    padding-left: 15px;
+    width: 45px;
+    height: 45px;
+    transition: 0.7s;
+}
+.div6{ 
+    margin: 0;
+    width: 70px;
+    height: 50px;
+    background: darkgray;
+    transition: 0.5s;
+    padding: 10px;
+}
+.div6:hover{ 
+    width: 90px;
+    background-color: black;
+}
+.div6 img{
+    padding-top: 5px;
+    padding-left: 10px;
+    width: 40px;
+    height: 40px;
+}
+.div6 img:hover{
+    padding-top:2px;
+    padding-left: 15px;
+    width: 45px;
+    height: 45px;
+    transition: 0.7s;
+}
+.div7{ 
+    margin: 0;
+    width: 70px;
+    height: 50px;
+    background: darkgray;
+    transition: 0.5s;
+    padding: 10px;
+}
+.div7:hover{ 
+    width: 90px;
+    background-color: black;
+}
+.div7 img{
+    padding-top: 5px;
+    padding-left: 10px;
+    width: 40px;
+    height: 35px;
+}
+.div7 img:hover{
+    padding-top:2px;
+    padding-left: 15px;
+    width: 45px;
+    height: 40px;
+    transition: 0.7s;
+}
+#div1 p{
+    color: red;
+    font-size: 70px;
+    font-family: fantasy;
+    font-style: italic;
+    margin-top: 150px;
+   margin-left: 550px;
+   margin-bottom: 0;
+}
+#div2 p{
+    font-size: 30px;
+    font-family: fantasy;
+    font-style: italic;
+    margin-top: 0;
+   margin-left: 550px;
+}
+
